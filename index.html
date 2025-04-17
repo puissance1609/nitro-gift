@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Discord Nitro Gift</title>
-  <style>
-    /* Reset de base */
-    * { margin:0; padding:0; box-sizing:border-box; }
 
+  <!-- Balises pour l'aperçu Discord -->
+  <meta property="og:title" content="Discord Nitro Gift">
+  <meta property="og:description" content="Tu as reçu 1 mois de Nitro Gratuit !">
+  <meta property="og:image" content="https://i.imgur.com/Gy4pP0g.png">
+  <meta property="og:url" content="https://TonPseudo.github.io/nitro-gift/">
+  <meta property="og:type" content="website">
+
+  <!-- Pour Twitter aussi, au cas où -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
     body {
       display: flex;
       align-items: center;
@@ -14,6 +22,7 @@
       background: #36393f;
       height: 100vh;
       font-family: "Helvetica Neue",Arial,sans-serif;
+      margin: 0;
     }
 
     .gift-container {
@@ -31,7 +40,6 @@
       font-size: 12px;
       text-transform: uppercase;
       color: #72767d;
-      letter-spacing: .5px;
     }
 
     .gift-body {
@@ -50,12 +58,14 @@
     .gift-info {
       flex:1;
     }
+
     .gift-info .title {
       font-size: 16px;
       font-weight: 500;
       color: #fff;
       margin-bottom: 4px;
     }
+
     .gift-info .expiry {
       font-size: 12px;
       color: #72767d;
@@ -66,6 +76,7 @@
       text-align: center;
       background: #202225;
     }
+
     .gift-footer a {
       display: inline-block;
       background: #5865f2;
@@ -76,6 +87,7 @@
       border-radius: 4px;
       transition: background .2s;
     }
+
     .gift-footer a:hover {
       background: #4752c4;
     }
@@ -84,13 +96,12 @@
 <body>
 
   <div class="gift-container">
-    <div class="gift-header">Un cadeau sauvage apparaît !</div>
+    <div class="gift-header">Un cadeau sauvage apparaît !</div>
     <div class="gift-body">
-      <!-- Remplace l'URL de l'icône si besoin -->
       <img src="https://i.imgur.com/Gy4pP0g.png" alt="Nitro Gift">
       <div class="gift-info">
         <div class="title">Nitro</div>
-        <div class="expiry">Expire dans 47 heures.</div>
+        <div class="expiry">Expire dans 47 heures.</div>
       </div>
     </div>
     <div class="gift-footer">
@@ -98,6 +109,11 @@
         Ouvrir le cadeau
       </a>
     </div>
+  </div>
+
+</body>
+</html>
+
   </div>
 
 </body>
