@@ -2,45 +2,55 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://puissance1609.github.io/nitro-gift/" />
-  <meta property="og:title"       content="🎁 Tu as reçu un cadeau Discord Nitro !" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://puissance1609.github.io/nitro-gift/" />
+  <meta property="og:title" content="🎁 Tu as reçu un cadeau Discord Nitro !" />
   <meta property="og:description" content="Clique ici pour récupérer ton Nitro Gratuit !" />
-  <meta property="og:image"       content="https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png" />
-  <meta property="og:image:width" content="665" />   <!-- Largeur de l'image -->
-  <meta property="og:image:height" content="184" />  <!-- Hauteur de l'image -->
-  <meta name="twitter:card"       content="summary_large_image" />
-  <meta name="viewport"           content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png" />
+  <meta property="og:image:width" content="665" />
+  <meta property="og:image:height" content="184" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discord Nitro Gift</title>
   <style>
+    /* Styles pour la mise en page globale */
     html, body {
-      margin: 0; padding: 0;
-      width: 100%; height: 100%;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       overflow: hidden;
       background: #000;
     }
+
+    /* Conteneur de l'image de fond */
     .container {
       position: relative;
-      width: 100vw;   /* largeur de la fenêtre */
-      height: 100vh;  /* hauteur de la fenêtre */
-      background: url('https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png') no-repeat center/contain;
-      background-size: 665px 184px; /* Taille de l'image pour qu'elle soit exactement comme prévu */
+      width: 100%;
+      height: 100%;
+      background: url('https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png') no-repeat center center;
+      background-size: cover; /* L'image prend toute la page sans déformation */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    /* Le bouton pour récupérer la récompense */
     .btn {
       position: absolute;
-      left: 50%;     /* centre horizontalement */
-      top: 60%;      /* Position précise du bouton sur l'image (ajuste selon ton besoin) */
-      transform: translate(-50%, -50%); /* Centre le bouton */
-      padding: 12px 24px;
+      padding: 20px 40px;
       background-color: #5865F2;
       color: #fff;
       border: none;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 20px;
       font-family: Arial, sans-serif;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 10; /* S'assurer que le bouton est au-dessus de l'image */
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
+
     .btn:hover {
       background-color: #4752C4;
     }
