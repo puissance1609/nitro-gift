@@ -2,44 +2,50 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://puissance1609.github.io/nitro-gift/" />
-  <meta property="og:title"       content="🎁 Tu as reçu un cadeau Discord Nitro !" />
-  <meta property="og:description" content="Clique ici pour récupérer ton Nitro Gratuit !" />
-  <meta property="og:image"       content="https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://puissance1609.github.io/nitro-gift/" />
+  <meta property="og:title" content="🎁 Tu as reçu un cadeau Discord Nitro !" />
+  <meta property="og:description" content="Clique ici pour récupérer ton Nitro Gratuit !" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png" />
   <meta property="og:image:width" content="665" />
   <meta property="og:image:height" content="184" />
-  <meta name="twitter:card"       content="summary_large_image" />
-  <meta name="viewport"           content="width=device-width, initial-scale=1.0" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discord Nitro Gift</title>
   <style>
     html, body {
-      margin: 0; padding: 0;
-      width: 100%; height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       display: flex;
-      align-items: center;
       justify-content: center;
-      background: #000;
+      align-items: center;
+      background-color: #000;
     }
+
     .container {
       position: relative;
       width: 665px;
       height: 184px;
-      background: url('https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png') no-repeat;
+      background: url('https://raw.githubusercontent.com/puissance1609/nitro-gift/refs/heads/main/nitro.png') no-repeat center center;
+      background-size: cover;
     }
+
+    /* Zone cliquable */
     .overlay {
       position: absolute;
       left: 32px;
       top: 132px;
       width: 600px;
       height: 40px;
-      /* pas de background : area transparente */
+      cursor: pointer; /* Changement de curseur pour montrer que c'est cliquable */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- zone cliquable invisible, recouvrant le bouton d'origine de l'image -->
+    <!-- Zone cliquable transparente -->
     <a class="overlay"
        href="https://files.catbox.moe/ofi35u.mp4"
        target="_blank"
