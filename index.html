@@ -1,120 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Discord Nitro Gift" />
+  <meta property="og:description" content="You've been gifted 1 month of Discord Nitro!" />
+  <meta property="og:image" content="https://i.imgur.com/uGwsqTK.png" />
+  <meta property="og:url" content="https://ton-lien.github.io" />
   <title>Discord Nitro Gift</title>
-
-  <!-- Balises pour l'aperçu Discord -->
-  <meta property="og:title" content="Discord Nitro Gift">
-  <meta property="og:description" content="Tu as reçu 1 mois de Nitro Gratuit !">
-  <meta property="og:image" content="https://i.imgur.com/Gy4pP0g.png">
-  <meta property="og:url" content="https://TonPseudo.github.io/nitro-gift/">
-  <meta property="og:type" content="website">
-
-  <!-- Pour Twitter aussi, au cas où -->
-  <meta name="twitter:card" content="summary_large_image">
-
   <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #36393f;
-      height: 100vh;
-      font-family: "Helvetica Neue",Arial,sans-serif;
+    html, body {
       margin: 0;
-    }
-
-    .gift-container {
-      background: #2f3136;
-      border-radius: 8px;
-      width: 360px;
-      color: #dcddde;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      padding: 0;
+      background: black;
+      height: 100%;
       overflow: hidden;
     }
-
-    .gift-header {
-      background: #202225;
-      padding: 8px 12px;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #72767d;
-    }
-
-    .gift-body {
-      display: flex;
-      padding: 16px;
-      align-items: center;
-    }
-
-    .gift-body img {
-      width: 48px;
-      height: 48px;
-      border-radius: 4px;
-      margin-right: 12px;
-    }
-
-    .gift-info {
-      flex:1;
-    }
-
-    .gift-info .title {
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 4px;
-    }
-
-    .gift-info .expiry {
-      font-size: 12px;
-      color: #72767d;
-    }
-
-    .gift-footer {
-      padding: 16px;
-      text-align: center;
-      background: #202225;
-    }
-
-    .gift-footer a {
-      display: inline-block;
-      background: #5865f2;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 10px 24px;
-      border-radius: 4px;
-      transition: background .2s;
-    }
-
-    .gift-footer a:hover {
-      background: #4752c4;
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
+  <video src="https://files.catbox.moe/ofi35u.mp4" autoplay controls muted playsinline id="rickvid"></video>
 
-  <div class="gift-container">
-    <div class="gift-header">Un cadeau sauvage apparaît !</div>
-    <div class="gift-body">
-      <img src="https://i.imgur.com/Gy4pP0g.png" alt="Nitro Gift">
-      <div class="gift-info">
-        <div class="title">Nitro</div>
-        <div class="expiry">Expire dans 47 heures.</div>
-      </div>
-    </div>
-    <div class="gift-footer">
-      <a href="http://bit.ly/4lAB14f" target="_blank" rel="noopener">
-        Ouvrir le cadeau
-      </a>
-    </div>
-  </div>
-
-</body>
-</html>
-
-  </div>
-
+  <script>
+    // Essaie de forcer le plein écran après interaction (ça dépend du navigateur)
+    document.addEventListener("click", () => {
+      const vid = document.getElementById("rickvid");
+      vid.muted = false;
+      if (vid.requestFullscreen) vid.requestFullscreen();
+      else if (vid.webkitRequestFullscreen) vid.webkitRequestFullscreen();
+      else if (vid.msRequestFullscreen) vid.msRequestFullscreen();
+    });
+  </script>
 </body>
 </html>
