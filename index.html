@@ -2,39 +2,56 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Discord Nitro Gift" />
-  <meta property="og:description" content="You've been gifted 1 month of Discord Nitro!" />
+  <meta property="og:title" content="You've been gifted a Discord Nitro subscription!" />
+  <meta property="og:description" content="Click to claim your Nitro gift." />
   <meta property="og:image" content="https://i.imgur.com/uGwsqTK.png" />
-  <meta property="og:url" content="https://ton-lien.github.io" />
+  <meta property="og:url" content="https://tonpseudo.github.io/tonrepo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discord Nitro Gift</title>
   <style>
-    html, body {
+    body, html {
       margin: 0;
       padding: 0;
-      background: black;
       height: 100%;
       overflow: hidden;
     }
-    video {
+
+    .container {
+      position: relative;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
+      background-image: url('https://i.imgur.com/uGwsqTK.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .btn {
+      position: absolute;
+      left: 50%;
+      top: 76%;
+      transform: translate(-50%, -50%);
+      padding: 14px 28px;
+      background-color: #5865F2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: sans-serif;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #4752C4;
     }
   </style>
 </head>
 <body>
-  <video src="https://files.catbox.moe/ofi35u.mp4" autoplay controls muted playsinline id="rickvid"></video>
-
-  <script>
-    // Essaie de forcer le plein écran après interaction (ça dépend du navigateur)
-    document.addEventListener("click", () => {
-      const vid = document.getElementById("rickvid");
-      vid.muted = false;
-      if (vid.requestFullscreen) vid.requestFullscreen();
-      else if (vid.webkitRequestFullscreen) vid.webkitRequestFullscreen();
-      else if (vid.msRequestFullscreen) vid.msRequestFullscreen();
-    });
-  </script>
+  <div class="container">
+    <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+      🎁 Récupérer la récompense
+    </a>
+  </div>
 </body>
 </html>
